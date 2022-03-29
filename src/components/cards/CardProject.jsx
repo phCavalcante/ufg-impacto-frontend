@@ -1,4 +1,5 @@
 import "./card.css"
+import Modal from "../modal/Modal"
 
 export default function CardProject(props) {
     
@@ -10,9 +11,11 @@ export default function CardProject(props) {
           <p className="card-text fw-light text-truncate" style={{color: 'white'}}>{props.description}</p>
           <h6 className="card-subtitle mb-2 text-uppercase" style={{color: 'white'}}>Unidade Acadêmica</h6>
           <p className="card-text fw-light" style={{color: 'white'}}>{props.academicUnit}</p>
-          <a href="#" className="btn btn-secondary mb-3" style={{color: "white", display: "flex", textAlign: "center", justifyContent: "center", alignItems: "center", width: "40%"}}>
+          {/* <a href="#" className="btn btn-secondary mb-3" style={{color: "white", display: "flex", textAlign: "center", justifyContent: "center", alignItems: "center", width: "40%"}}>
           Visualizar
-        </a>
+        </a> */}
+        {/* {props.children} */}
+        <Modal title={props.title} description={props.description} academicUnit={props.academicUnit} idModal={props.idModal}/>
         <a href="#" className="card-link" style={{color: 'white'}}>Página na Web</a>
         </div>
       </div>

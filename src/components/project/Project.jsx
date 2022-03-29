@@ -161,8 +161,8 @@ export default function Project() {
         </div>
       </div>
       <div className="row d-flex justify-content-start align-items-start">
-        <div className="col-sm-3 offset-2">
-          <Button descricao={"Detalhes"} />
+        <div className="col-sm-2 offset-1" style={{position: 'relative', marginLeft: '10%'}}>
+         <a href="projects-detail" className="btn btn-secondary" style={{color: "white", display: "flex", textAlign: "center", justifyContent: "center", alignItems: "center"}}> Detalhes</a>
         </div>
       </div>
       <div className="row d-flex justify-content-start align-items-center">

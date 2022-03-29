@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Card from "../card/Card";
-import Row from "../../layout/row/Row";
+import Card from "../cards/Card";
 
 export default function Home() {
   return (
@@ -13,6 +12,7 @@ export default function Home() {
         <Card title="turmas" description="Dados e indicadores relacionados as turmas ofertadas incluindo ano de oferta..."/>
         <Card title="outros indicadores" description="Outros indicadores gerais de impacto social e econômico da UFG na sociedade..."/>
       </div>
+      <div className="row"></div>
     </div>
   );
 }

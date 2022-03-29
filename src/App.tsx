@@ -7,7 +7,7 @@ import Routers from './components/router/Routers';
 
 function App() {
   return (
-    <div style={{overflowX: "hidden"}}>
+    <div style={{overflow: "hidden"}}>
       <Header />
       <Routers />
       <Footer />

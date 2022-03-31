@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import CardProject from "../cards/CardProject";
-import Modal from "../modal/Modal"
 import Label from "../label/Label";
 import axios from "axios";
 

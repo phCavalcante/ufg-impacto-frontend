@@ -149,7 +149,7 @@ export default function Project() {
     <div className="container-fluid" style={{ marginTop: "1%" }}>
       <div className="row d-flex justify-content-center">
         <div className="col-sm-12">
-          <Wordcloud words={dataWords}/>
+          <Wordcloud words={dataWords} title="Projetos"/>
         </div>
       </div>
       <div className="row d-flex justify-content-center align-items-center mt-5">

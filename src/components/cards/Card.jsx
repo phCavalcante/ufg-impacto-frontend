@@ -6,7 +6,7 @@ export default function Card(props) {
         <p className="card-text" style={{color: "white", display: "flex", textAlign: "center", justifyContent: "center", alignItems: "center"}} >
           {props.description}
         </p>
-        <a href="project" className="btn btn-secondary" style={{color: "white", display: "flex", textAlign: "center", justifyContent: "center", alignItems: "center"}}>
+        <a href={props.link} className="btn btn-secondary" style={{color: "white", display: "flex", textAlign: "center", justifyContent: "center", alignItems: "center"}}>
           Ver
         </a>
       </div>

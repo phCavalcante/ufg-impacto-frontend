@@ -191,7 +191,7 @@ export default function Course() {
           <Piechart data={dataPie} options={optionsPie} title={titlePie} />
         </div>
         <div className="col-sm-2" >
-         <a href="course-detail" className="btn btn-secondary" style={{color: "white", display: "flex", textAlign: "center", justifyContent: "center", alignItems: "center"}}> Detalhes</a>
+         <a href="courses-detail" className="btn btn-secondary" style={{color: "white", display: "flex", textAlign: "center", justifyContent: "center", alignItems: "center"}}> Detalhes</a>
         </div>
         {/* <div className="col-sm-6">
           <Legend />

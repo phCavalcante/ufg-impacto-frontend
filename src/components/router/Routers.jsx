@@ -19,7 +19,7 @@ export default function Routers() {
       <Route exact path="/project" element={<Project/>} />
       <Route exact path="/course" element={<Course/>} />
       <Route exact path="/projects-detail" element={<ProjectsDetail/>} />
-      <Route exact path="/course-detail" element={<CoursesDetail/>} />
+      <Route exact path="/courses-detail" element={<CoursesDetail/>} />
       <Route exact path="/student" element={<Student/>} />
     </Routes>
   )

@@ -3,11 +3,19 @@ import CardCourse from "../cards/CardCourse";
 import Label from "../label/Label";
 import axios from "axios";
 
-const baseUrl = "http://localhost:9654/api/indicator/course-campus";
+const baseUrl = "http://localhost:9654/api/indicator/courses-campus";
 
 export default function CoursesDetail() {
 
-  const [courses, setCourses] = useState({});
+  const [courses, setCourses] = useState({
+    68700504: [{}],
+    68700505: [{}],
+    68700506: [{}],
+    68700500: [{}],
+    68700501: [{}],
+    68700502: [{}],
+    68700503: [{}]
+  });
 
   useEffect(() => {
     axios
@@ -18,11 +26,13 @@ export default function CoursesDetail() {
         },
       })
       .then((response) => {
+        console.log(response.data)
         setCourses(response.data);
       });
-  }, []);
+  }, [courses]);
 
   function renderCidadeGoiasCards() {
+    console.log(`${Object.keys(courses)} courses`)
     return courses["68700504"].map((course, index) => (
         <div className="col-sm-3">
               <CardCourse
@@ -138,6 +148,15 @@ export default function CoursesDetail() {
     <div className="container-fluid" style={{ marginTop: "1%" }}>
       <Label title={"Cursos"} subtitle={"detalhes"} />
       <p
+        className="text-center fs-4 text-uppercase fw-bold mt-4"
+        style={{ color: "#0D3E5F" }}
+      >
+        Samambaia
+      </p>
+      <div className="row d-flex justify-content-start container-fluid">
+        {renderSamambaiaCards()}
+      </div>
+      <p
         className="text-center fs-4 text-uppercase fw-bold"
         style={{ color: "#0D3E5F" }}
       >
@@ -155,15 +174,6 @@ export default function CoursesDetail() {
       </p>
       <div className="row d-flex justify-content-start container-fluid">
         {renderCatalaoCards()}
-      </div>
-      <p
-        className="text-center fs-4 text-uppercase fw-bold mt-4"
-        style={{ color: "#0D3E5F" }}
-      >
-        Samambaia
-      </p>
-      <div className="row d-flex justify-content-start container-fluid">
-        {renderSamambaiaCards()}
       </div>
       <p
         className="text-center fs-4 text-uppercase fw-bold mt-4"

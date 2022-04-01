@@ -4,7 +4,7 @@ import Modal from "../modal/ModalCourse"
 export default function CardCourse(props) {
     
     return (
-        <div className="card mb-3" style={{background: "#2D5672", height: "20rem",}}>
+        <div className="card mb-3" style={{background: "#2D5672", height: "27rem",}}>
         <div className="card-body">
           <h5 className="card-title text-truncate" style={{color: 'white'}}>{props.title}</h5>
           <h6 className="card-subtitle mb-2 mt-3 text-uppercase" style={{color: 'white'}}>Cidade</h6>

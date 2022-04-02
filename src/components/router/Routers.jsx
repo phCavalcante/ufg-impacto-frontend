@@ -9,6 +9,7 @@ import Course from "../course/Course"
 import ProjectsDetail from "../project/ProjectsDetail";
 import CoursesDetail from "../course/CoursesDetail";
 import Student from "../student/Student";
+import Company from "../company/Company";
 
 export default function Routers() {
   
@@ -21,6 +22,7 @@ export default function Routers() {
       <Route exact path="/projects-detail" element={<ProjectsDetail/>} />
       <Route exact path="/courses-detail" element={<CoursesDetail/>} />
       <Route exact path="/student" element={<Student/>} />
+      <Route exact path="/company" element={<Company/>} />
     </Routes>
   )
 }

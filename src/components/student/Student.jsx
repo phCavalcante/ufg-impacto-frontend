@@ -3,7 +3,7 @@ import axios from "axios";
 
 import Barchart from "../charts/Barchart";
 
-const baseUrl = "http://localhost:9654/api/indicator/students-data";
+const baseUrl = "https://api-ufg-impacto.herokuapp.com/api/indicator/students-data";
 
 export default function Student(props) {
   const [studentsData, setStudentsData] = useState({

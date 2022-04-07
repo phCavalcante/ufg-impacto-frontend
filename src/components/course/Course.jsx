@@ -5,8 +5,8 @@ import Legend from "../legend/Legend";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const baseUrl = "http://localhost:9654/api/indicator/course-campus";
-const baseUrl2 = "http://localhost:9654/api/indicator/course-academic-unit";
+const baseUrl = "https://api-ufg-impacto.herokuapp.com/api/indicator/course-campus";
+const baseUrl2 = "https://api-ufg-impacto.herokuapp.com/api/indicator/course-academic-unit";
 
 export default function Course() {
 

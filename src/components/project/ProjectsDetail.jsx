@@ -3,7 +3,7 @@ import CardProject from "../cards/CardProject";
 import Label from "../label/Label";
 import axios from "axios";
 
-const baseUrl = "http://localhost:9654/api/indicator/project-type";
+const baseUrl = "https://api-ufg-impacto.herokuapp.com/api/indicator/project-type";
 
 export default function ProjectsDetail() {
 

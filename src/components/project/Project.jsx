@@ -6,7 +6,7 @@ import Button from "../button/Button";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const baseUrl = "http://localhost:9654/api/indicator/project";
+const baseUrl = "https://api-ufg-impacto.herokuapp.com/api/indicator/project";
 
 export default function Project() {
 

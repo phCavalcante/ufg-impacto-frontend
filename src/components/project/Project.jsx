@@ -2,7 +2,6 @@ import Wordcloud from "../wordcloud/Wordcloud";
 import Piechart from "../charts/Piechart";
 import Barchart from "../charts/Barchart";
 import Legend from "../legend/Legend";
-import Button from "../button/Button";
 import { useState, useEffect } from "react";
 import axios from "axios";
 

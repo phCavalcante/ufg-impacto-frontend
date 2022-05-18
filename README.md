@@ -3,7 +3,7 @@
 UFG Impact Project
 
 [![ReactJS](https://img.shields.io/badge/ReactJS-17-blue)](https://pt-br.reactjs.org/)
-[![Bootstrap](https://img.shields.io/badge/5-Bootstrap-blue)](https://getbootstrap.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-blue)](https://getbootstrap.com/)
 
 ## Execution instructions
 
